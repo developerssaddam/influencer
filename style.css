@@ -28,3 +28,74 @@ a {
   font-weight: 600;
 }
 
+/* Header section styles */
+.header_area {
+  width: 80%;
+  margin: 20px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_area button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.header_area button i {
+  display: block;
+  font-size: 20px;
+  color: #000;
+}
+
+.header_title {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menu_area {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.menu {
+  display: flex;
+  column-gap: 20px;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+/* Responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+  .mobile_menu {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+}
+
+/* Responsive for medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .mobile_menu {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    display: none;
+  }
+}
