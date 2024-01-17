@@ -147,6 +147,20 @@ img {
   padding: 1.2rem;
 }
 
+.sponsor {
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+}
+
+.sponsor_area {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  gap: 3rem;
+}
+
 /* Responsive for mobile device */
 
 @media screen and (max-width: 576px) {
@@ -176,6 +190,12 @@ img {
     font-size: 2.8rem;
     line-height: 4rem;
   }
+
+  .sponsor_area {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    gap: 2rem;
+  }
 }
 
 /* Responsive for medium device */
@@ -193,5 +213,10 @@ img {
     font-size: 4rem;
     line-height: 5rem;
     margin-bottom: 2rem;
+  }
+
+  .sponsor_area {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.6rem;
   }
 }
